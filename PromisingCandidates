@@ -8,7 +8,7 @@ N=240000
 The following (very incomplete) list has been tested up to the 2000000th prime.
 As you can see, these numbers are very common, which is a bad thing.
 
-Mathematica code:
+Mathematica code (if you have better code, please tell me):
 Do[num = 4 l; 
  Do[p = Prime[i]; 
   If[PowerMod[38, num, p] == Mod[-31, p], Break[], 
