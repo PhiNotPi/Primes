@@ -1,7 +1,10 @@
 These tuples show which primes can potentially divide 38^n+31.  
 I tested all primes up to 104723 (the 10000th prime).
 
-Call the numbers in each tuple {p,m,b}.  Then, that prime p is a divisor of 38^n+31 whenever n can be written as mx+b for some integer x >= 0. In other words, p|38^n+31 iff m|n-b.  For example, the entry {71,35,18} means that 38^(35x+18)+31 is always divisible by 71.
+Call the numbers in each tuple {p,m,b}.
+Then, that prime p is a divisor of 38^n+31 whenever n can be written as mx+b for some integer x >= 0.
+In other words, p|38^n+31 iff m|n-b.
+For example, the entry {71,35,18} means that 38^(35x+18)+31 is always divisible by 71.
 
 
 {{3, 2, 1}, {5, 4, 2}, {7, 6, 4}, {23, 22, 1}, {47, 46, 34}, {59, 58, 
