@@ -1,0 +1,45 @@
+These are values of N for which I have been unable determine primality.
+Send me a pull request if you have proofs of composite-ness for any of these numbers.
+Also, send a pull request if you find other promising leads.
+
+Tested for divisibility by the first 100000000 primes:
+N=240000
+
+The following (very incomplete) list has been tested up to the 2000000th prime.
+As you can see, these numbers are very common, which is a bad thing.
+
+Mathematica code:
+Do[num = 4 l; 
+ Do[p = Prime[i]; 
+  If[PowerMod[38, num, p] == Mod[-31, p], Break[], 
+   If[i == 2000000, Print[num]]], {i, 1, 2000000}], {l, 50000, 50153}]
+
+200028
+200036
+200052
+200100
+200108
+200120
+200124
+200136
+200144
+200184
+200196
+200232
+200256
+200280
+200300
+200352
+200372
+200388
+200412
+200424
+200432
+200448
+200460
+200480
+200496
+200556
+200576
+200592
+200612
