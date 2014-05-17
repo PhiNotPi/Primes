@@ -1,0 +1,11 @@
+Here is the Mathematica code I used to generate my List of Divisors.  It can probably be improved.
+
+pr = 38;
+set = Prime[Range[2, 10000]];
+f = MultiplicativeOrder[pr, #] &; 
+g = MultiplicativeOrder[pr, #, {Mod[-31, #]}] &;
+a = Map[g, set];
+b = Select[a, Sign[#] > 0 &];
+c = Select[set*Sign[a], # > 0 &];
+d = Map[f, c];
+com = Transpose[{c, d, b}]
